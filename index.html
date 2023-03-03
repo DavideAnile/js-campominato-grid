@@ -8,17 +8,42 @@
     <title>CAMPO MINATO</title>
 </head>
 <body>
-    
-<button id="play-button">PLAY</button>
+    <header>
+        <div>
+            <div class="logo">
+                <img src="https://d92mrp7hetgfk.cloudfront.net/images/sites/misc/Boolean/original.png?1623187562" alt="">
+                <h2>Boolean</h2>
+            </div>
+            
+        </div>
+        <div class="buttons">
+            <div>Difficoltà :</div>
+            <div>
+                <select name="boh" id="opzioni">
+                    <option value="1">FACILE</option>
+                    <option value="2">INTERMEDIA</option>
+                    <option value="3">DIFFICILE</option>
+                </select>
+            </div>
+            <div>
 
-<select name="boh" id="opzioni">
-    <option value="1">easy</option>
-    <option value="2">medium</option>
-    <option value="3">hard</option>
-</select>
-<div id="titolo">CAMPO MINATO !</div> 
+                <button id="play-button">PLAY</button>
+            </div>
+            
+        </div>
+    </header>
 
-<div id="grid-container"></div>
+
+    <main>
+        <div id="titolo">CAMPO MINATO !</div> 
+        
+        <div id="presentazione"><h2>Clicca play per aggiungere una griglia !</h2></div>
+        <div id="grid-container"></div>
+
+    </main>
+
+    <footer>Made with &hearts; by <a href="https://www.boolean.careers" style="padding-left: 10px;">Boolean</a> </footer>
+
 
 
     <script type="text/javascript" src="js/script.js"></script>

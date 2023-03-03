@@ -38,6 +38,7 @@ const playButtonEl = document.getElementById("play-button")
 const titolo = document.getElementById("titolo")
 const gridContainerEl = document.getElementById("grid-container")
 const opzioniEl = document.getElementById("opzioni")
+const presentazioneEl = document.getElementById("presentazione")
 let sottotitolo = document.createElement("div")
 let cellNumber;
 let squareDimensions;
@@ -51,7 +52,9 @@ let squareDimensions;
 
 //-genero evento al click del bottone
 playButtonEl.addEventListener("click",  function(){
-    
+ 
+//imposto display none su h2 di presentazione pagina    
+presentazioneEl.style.display = "none"    
     
 // reset al click 
     sottotitolo.innerText = " ";
