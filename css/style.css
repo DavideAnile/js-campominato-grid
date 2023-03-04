@@ -32,19 +32,40 @@ header .buttons{
 }
 
 
-header .buttons select,
-header .buttons button{
+header .buttons select{
 
     padding: 5px 10px;
     border: 1px solid lightgrey;
     border-radius: 20px;
+
 }
+header .buttons button{
+    
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid lightgrey;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+    
+}
+
+
+header .buttons button:hover{
+    animation: none;
+    cursor: pointer;
+}
+
+    
+    
 
 main{
     position: relative;
     width: 100%;
     height: calc(100vh - 150px) ;
-    background-color: #7fffd4;
+    background: radial-gradient(ellipse at top, #a8c26b, transparent),            
+                radial-gradient(ellipse at bottom, #9f0c3db7, transparent);
 }
 
 main div h2{
@@ -77,7 +98,13 @@ footer{
 
 .sottotitolo{
     font-size: 20px;
+    font-weight: bold;
     color: red;
+    border: 2px solid red;
+    padding: 5px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
 }
 
 #grid-container{
@@ -104,3 +131,25 @@ footer{
 .lightblue{
     background-color: rgba(0, 204, 255, 0.747)
 }
+
+
+
+
+/*__________ANIMAZIONE__________*/
+
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
